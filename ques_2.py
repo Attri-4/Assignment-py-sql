@@ -13,6 +13,7 @@ class Total_compensation:
                 host="localhost",
                 database="assignment",
                 user="postgres",
+                #confidential information like password should not be shared on open source code; rather use environment variables or config file.
                 password="munna1998")
             cur = conn.cursor()
             # connection established
@@ -43,6 +44,7 @@ where jobhist.deptno=dept.deptno and jobhist.empno=emp.empno"""
             if conn is not None:
                 cur.close()
                 conn.close()
+                #also commit the connection; otherwise all the transactions will have no effect.
 
 #main method
 #creating an object of employees class and calling the emp_manager method
