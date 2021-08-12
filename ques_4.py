@@ -40,6 +40,7 @@ class Total_compensation:
             if conn is not None:
                 cursor.close()
                 conn.close()
+                #commit to the database
 #main method
 #creating an object of employees class and calling the compensation_by_dept method
 
@@ -48,3 +49,4 @@ if __name__ == '__main__':
     cur = None
     comp = Total_compensation()
     comp.compensation
+    #call the meethod using paranthesis
