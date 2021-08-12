@@ -4,6 +4,7 @@ import openpyxl
 import os
 import pandas as pd
 import logging
+#imported some packages which were not used
 #importing packages
 
 #class to create a table and upload data of "ques_2.xlsx" to postgres databse
