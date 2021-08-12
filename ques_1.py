@@ -14,6 +14,7 @@ class employees:
                 host="localhost",
                 database="assignment",
                 user="postgres",
+                #confidential information like password should not be shared on open source code; rather use environment variables or config file.
                 password="munna1998")
             cur = conn.cursor()
             # connection established
